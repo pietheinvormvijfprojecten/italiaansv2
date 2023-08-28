@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="vlag.png">
+  <title>Document</title>
+</head>
+<body>
+  <div id="inputfield">
+  <label>Mannelijk of vrouwelijk?</label><br />
+  <p>Vul een italiaans woord (enkelvoud) in en kom erachter of het mannelijk of vrouwelijk is.</p>
+ <input type="text" name="input" id="woord" placeholder="Bijvoorbeeld: ragazza"> <br /> 
+ <button onclick="mannelijkOfVrouwelijk()">Ga</button>
+</div>
+  <script type="text/javascript">
+  
+   function mannelijkOfVrouwelijk() {
+     
+     let myTextInput = document.getElementById("woord");
+    let userInput = myTextInput.value;
+     //let italiaansWoord = document.getElementById("input");
+
+    if (userInput.endsWith("a")) {
+      window.alert("Het woord is vrouwelijk.");
+    } else {
+      window.alert("Het woord is mannelijk.");
+    }
+  } 
+  </script>
+</body>
+</html>
